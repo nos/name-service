@@ -1,2 +1,1 @@
-# smart-contract
-nOS services smart contract. Currently only nameservice.
+# nOS Name Service Smart Contract
