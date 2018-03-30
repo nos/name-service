@@ -18,7 +18,7 @@
 
 Register a new domain, set a target URL, and optionally give ownership to different account.
 
-For the MVP, only the hardcoded admin (`owner`) can invoke `RegisterDomain`
+For the MVP, only the hardcoded admin (`owner`) can invoke `RegisterDomain`.
 
 ```
 'RegisterDomain' ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'somedomain.nos', 'https://deanpress.github.com/some-site-repo', 'AMrLse3suPd123HjSanwefCC5WQZPmjDYv']
