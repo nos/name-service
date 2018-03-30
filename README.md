@@ -6,11 +6,11 @@
 
 ## MVP Features
 
-* Admin can register domain names on behalf of other users.
+* Admin can register domain names on behalf of other users (*registrants*).
 
 * Admin can delete domains.
 
-* Domain owners can change the target URL (Github Pages).
+* Admin and registrant can change the target URL (Github Pages).
 
 ## Examples
 
@@ -30,7 +30,7 @@ For the MVP, only the hardcoded admin (`owner`) can invoke `RegisterDomain`.
 
 3. `https://deanpress.github.com/some-site-repo` is the URL we wish to point it to.
 
-4. `AMrLse3suPd123HjSanwefCC5WQZPmjDYv` is the "registrant". The address of the account we want to give the domain's priveledges to. Next to the hardcoded Admin account, this account will be able to invoke `SetDomainTarget`.
+4. `AMrLse3suPd123HjSanwefCC5WQZPmjDYv` is the *registrant*. The address of the account we want to give the domain's priveledges to. Next to the hardcoded Admin account, this account will be able to invoke `SetDomainTarget`.
 
 
 ### 2. SetDomainTarget
