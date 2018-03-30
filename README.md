@@ -17,6 +17,7 @@
 ### 1. RegisterDomain
 
 Register a new domain, set a target URL, and optionally give ownership to different account.
+
 For the MVP, only the hardcoded admin (`owner`) can invoke `RegisterDomain`
 
 ```
@@ -35,6 +36,7 @@ For the MVP, only the hardcoded admin (`owner`) can invoke `RegisterDomain`
 ### 2. SetDomainTarget
 
 Set the target domain.
+
 For the MVP, both the hardcoded admin and the registrant can invoke `SetDomainTarget`.
 
 
@@ -44,17 +46,12 @@ For the MVP, both the hardcoded admin and the registrant can invoke `SetDomainTa
 
 * `AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y` is the address of the invoking user.
 
-* `somedomain.nos` is the domain we wish to register. We have to be the domain owner (i.e. if we follow the `RegisterDomain` example: `AMrLse3suPd123HjSanwefCC5WQZPmjDYv`) or the hardcoded admin (`AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y`).
-
-The hardcoded admin (`owner`) is also able to `SetDomainTarget`:
-```
-'SetDomainTarget' ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'somedomain.nos', 'https://different-url.github.com/different-site']
-```
-
+* `somedomain.nos` is the domain we wish to register. We have to be the registrar or the hardcoded admin account.
 
 ### 3. DeleteDomain
 
 Delete a domain.
+
 For the MVP, only the hardcoded admin can invoke `DeleteDomain`.
 
 ```
