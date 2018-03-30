@@ -30,7 +30,7 @@ For the MVP, only the hardcoded admin (`owner`) can invoke `RegisterDomain`
 
 * `https://deanpress.github.com/some-site-repo` is the URL we wish to point it to.
 
-* `AMrLse3suPd123HjSanwefCC5WQZPmjDYv` is the "registrant". The address of the account we want to give the domain's priveledges. Next to the hardcoded Admin account, this account will be able to invoke `SetDomainTarget`.
+* `AMrLse3suPd123HjSanwefCC5WQZPmjDYv` is the "registrant". The address of the account we want to give the domain's priveledges to. Next to the hardcoded Admin account, this account will be able to invoke `SetDomainTarget`.
 
 
 ### 2. SetDomainTarget
