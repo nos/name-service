@@ -59,7 +59,6 @@ For the MVP, only the hardcoded admin can invoke `DeleteDomain`.
 
 ```
 'DeleteDomain' ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'somedomain.nos']
-
 ```
 
 ## Nameservice Client <> Contract Resolver Flow
