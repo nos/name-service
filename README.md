@@ -24,7 +24,7 @@ For the MVP, only the hardcoded admin (`owner`) can invoke `RegisterDomain`.
 'RegisterDomain' ['AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y', 'somedomain.nos', 'https://deanpress.github.com/some-site-repo', 'AMrLse3suPd123HjSanwefCC5WQZPmjDYv']
 ```
 
-1. `AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y` is the address of the invoking user. Before executing the operation, `CheckWitness()` is run on this argument, to make sure that the invoker is who they say they are. In this case, because we're registering a domain (Admin exclusive operation): it should always be `AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y`, the hardcoded admin domain.
+1. `AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y` is the address of the invoking user. Before executing the operation, `CheckWitness()` is run on this argument to make sure that the invoker is who they say they are. In this case, because we're registering a domain (Admin exclusive operation): it should always be `AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y`, the hardcoded admin domain.
 
 2. `somedomain.nos` is the domain we wish to register.
 
