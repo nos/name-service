@@ -1,4 +1,6 @@
-# nOS Name Service Smart Contract
+# nOS Service Smart Contracts
+
+This repository contains the smart contract for the nOS back-end.
 
 ---
 
