@@ -56,7 +56,8 @@ def Main(operation, args):
             return True
 
     if operation == 'SetDomainTarget':
-        if CheckWitness(domain_owner_key) or CheckWitness(owner):
+        domain_owner = Get(GetContext(), domain_owner_key)
+        if (CheckWitness(domain_owner)) or (CheckWitness(owner)):
             # License the product
             target = args[2]
             Put(GetContext(), domain_target_key, target)
