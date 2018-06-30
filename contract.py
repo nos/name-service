@@ -1,7 +1,6 @@
 """
-NeoSense Smart Contract based Licensing
-Created by Dean van Dugteren (City of Zion, VDT Network)
-hello@dean.press
+Semi-Centralized nOS Name Service Smart Contract
+Created by nOS - https://nos.io
 """
 
 from boa.interop.Neo.Runtime import CheckWitness, Log
@@ -51,7 +50,7 @@ def Main(operation, args):
             address = args[2]
             Put(GetContext(), domain_owner_key, address)
             if len(args) == 4:
-                target = args[3]
+                target = args[2]
                 Put(GetContext(), domain_target_key, target)
             return True
 
