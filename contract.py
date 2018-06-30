@@ -47,11 +47,13 @@ def Main(operation, args):
 
     if operation == 'RegisterDomain':
         if(CheckWitness(owner)):
-            address = args[2]
-            Put(GetContext(), domain_owner_key, address)
+            target = args[2]
+            Put(GetContext(), domain_target_key, target)
             if len(args) == 4:
-                target = args[2]
-                Put(GetContext(), domain_target_key, target)
+                domain_owner = args[3]
+            else:
+                domain_owner = args[0]
+            Put(GetContext(), domain_owner_key, domain_owner)
             return True
 
     if operation == 'SetDomainTarget':
@@ -69,3 +71,5 @@ def Main(operation, args):
             return True
             
     return False
+
+
